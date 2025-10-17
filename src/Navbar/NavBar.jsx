@@ -4,7 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import logo from '../assets/logo.png'
 const Navbar = () => {
     const links = <div className='lg:flex gap-5'><li><Link to='/'>Home</Link></li>
-        <li><Link to='/listed_book'>Apps</Link></li>
+        <li><Link to='/apps'>Apps</Link></li>
         <li><Link cl>Installation</Link></li>
     </div>
     return (

@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://i.ibb.co.com/21bnCZFp/unnamed.webp",
+    "title": "TaskFlow Pro",
+    "companyName": "NovaSoft",
+    "id": 1,
+    "description": "Boost productivity with seamless task management and smart reminders.",
+    "size": 52,
+    "reviews": 2410,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 860 },
+      { "name": "5 star", "count": 880 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TM0MS4W8/image.png",
+    "title": "PhotoTune FX",
+    "companyName": "PixelMagic",
+    "id": 2,
+    "description": "Edit and enhance photos with AI filters and instant background removal.",
+    "size": 88,
+    "reviews": 5320,
+    "ratingAvg": 4.7,
+    "downloads": 3450000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 510 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3260 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7tHmL5p0/image.png",
+    "title": "NoteCraft",
+    "companyName": "PaperCloud",
+    "id": 3,
+    "description": "Take beautiful notes, sync across devices, and stay organized effortlessly.",
+    "size": 64,
+    "reviews": 4100,
+    "ratingAvg": 4.3,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 330 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 950 },
+      { "name": "5 star", "count": 2070 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/dJtJVfVQ/image.png",
+    "title": "FitTrackr",
+    "companyName": "MoveWell",
+    "id": 4,
+    "description": "Track workouts, monitor calories, and reach your fitness goals easily.",
+    "size": 75,
+    "reviews": 3850,
+    "ratingAvg": 4.6,
+    "downloads": 1850000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 1040 },
+      { "name": "5 star", "count": 1980 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/VchfFQBK/image.png",
+    "title": "Learnify",
+    "companyName": "EduWave",
+    "id": 5,
+    "description": "Interactive learning app with quizzes, flashcards, and progress tracking.",
+    "size": 90,
+    "reviews": 5600,
+    "ratingAvg": 4.8,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 170 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3750 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zWFyrwZD/image.png",
+    "title": "MusicMate",
+    "companyName": "SoundLoop",
+    "id": 6,
+    "description": "Stream and discover millions of songs with personalized playlists.",
+    "size": 98,
+    "reviews": 8740,
+    "ratingAvg": 4.2,
+    "downloads": 5100000,
+    "ratings": [
+      { "name": "1 star", "count": 470 },
+      { "name": "2 star", "count": 580 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 5250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wrzd4wby/image.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinPro",
+    "id": 7,
+    "description": "Manage expenses, set savings goals, and visualize your spending trends.",
+    "size": 60,
+    "reviews": 2990,
+    "ratingAvg": 4.4,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 430 },
+      { "name": "4 star", "count": 910 },
+      { "name": "5 star", "count": 1280 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/NnYdDX4r/image.png",
+    "title": "GameBoost",
+    "companyName": "LagZero",
+    "id": 8,
+    "description": "Optimize your device performance and boost gaming speed instantly.",
+    "size": 45,
+    "reviews": 6780,
+    "ratingAvg": 4.1,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 870 },
+      { "name": "4 star", "count": 1380 },
+      { "name": "5 star", "count": 3390 }
+    ]
+  }
+]
