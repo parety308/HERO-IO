@@ -3,9 +3,9 @@ import { Link } from 'react-router';
 import { FaGithubSquare } from "react-icons/fa";
 import logo from '../assets/logo.png'
 const Navbar = () => {
-    const links = <div className='lg:flex gap-5'><li><Link to='/'>Home</Link></li>
+    const links = <div className='lg:flex gap-5 text-lg font-semibold'><li><Link to='/'>Home</Link></li>
         <li><Link to='/apps'>Apps</Link></li>
-        <li><Link cl>Installation</Link></li>
+        <li><Link>Installation</Link></li>
     </div>
     return (
         <div className="navbar bg-base-100 shadow-sm px-6">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
+                <a onClick={()=>{window.location.href="https://github.com/parety308"}}className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
             </div>
         </div>
     );

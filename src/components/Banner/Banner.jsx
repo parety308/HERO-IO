@@ -2,7 +2,7 @@ import React from 'react';
 import PlayImg from '../../assets/playstore.png';
 import AppImg from '../../assets/AppStore.png';
 import BanImg from '../../assets/hero.png';
-const Banner = () => {
+const Banner = ({ handleClick }) => {
     return (
         <div>
             <div className="hero bg-base-200 ">
@@ -13,8 +13,8 @@ const Banner = () => {
                             At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.
                         </p>
                         <div className='flex justify-center items-center gap-5'>
-                            <button className="btn"><img className='w-6' src={PlayImg} alt="" /> Google Play</button>
-                            <button className="btn "><img className='w-6' src={AppImg} alt="" /> App Store</button>
+                            <button onClick={()=>handleClick('https://play.google.com')} className="btn"><img className='w-6' src={PlayImg} alt="" /> Google Play</button>
+                            <button onClick={()=>handleClick("https://www.apple.com/app-store")} className="btn "><img className='w-6' src={AppImg} alt="" /> App Store</button>
                         </div>
                     </div>
                 </div>
