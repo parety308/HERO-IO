@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import TrendingApp from '../TrendingApp/TrendingApp';
 import dwnIcon from '../../assets/icon-downloads.png'
 import ratIcon from '../../assets/icon-ratings.png'
 import revIcon from '../../assets/icon-review.png'
 import RatingsChart from '../RatingsChart/RatingsChart';
+import { addToLC } from '../AddToLC/AddToLC';
 const AppDetails = () => {
     const { appId } = useParams();
     const allApps = useLoaderData();
     const app = allApps.find(ap => ap.id === parseInt(appId));
-    const { title, downloads, ratingAvg, image, companyName, reviews, id, ratings, size ,description} = app;
+    const { title, downloads, ratingAvg, image, companyName, reviews, id, ratings, size, description } = app;
+    const [isInstalling, setIsInstalling] = useState(false);
+    const handleInstalation = () => {
+        addToLC(id);
+        setIsInstalling(true);
+    }
     return (
         <div className='mx-8 auto'>
             <div className='lg:flex justify-start items-center  rounded-2xl'>
                 <div>
-                    <img className='shadow-sm my-6 mr-5 rounded-xl'
+                    <img className='shadow-sm my-6 mr-5 rounded-xl w-50'
                         src={image} alt="" />
                 </div>
                 <div>
@@ -47,10 +53,10 @@ const AppDetails = () => {
             <hr className='my-8 lg:my-5 border-gray-400' />
             <RatingsChart ratings={ratings}></RatingsChart>
             <hr className='my-8 lg:my-5 border-gray-400' />
-            <button className='btn bg-[#00D390] text-xl font-semibold'>Install Now ({size} MB)</button>
+            <button disabled={isInstalling} onClick={() => { handleInstalation() }} className='btn bg-[#00D390] text-xl font-semibold'> {isInstalling ? "Installed" : `Install Now (${size} MB)`}</button>
             <div className='my-5'>
-               <h1 className='text-xl font-semibold'>Description </h1>
-               <p>{description}</p>
+                <h1 className='text-xl font-semibold'>Description </h1>
+                <p>{description}</p>
             </div>
         </div>
     );

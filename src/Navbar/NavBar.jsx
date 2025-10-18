@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
     const links = <div className='lg:flex gap-5 text-lg font-semibold'><li><Link to='/'>Home</Link></li>
         <li><Link to='/apps'>Apps</Link></li>
-        <li><Link>Installation</Link></li>
+        <li><Link to='/instalation'>Installation</Link></li>
     </div>
     return (
         <div className="navbar bg-base-100 shadow-sm px-6">
