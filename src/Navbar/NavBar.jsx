@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a onClick={()=>{window.location.href="https://github.com/parety308"}}className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
+                <a onClick={()=> { window.location.href = "https://github.com/parety308" }} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
             </div>
         </div>
     );
