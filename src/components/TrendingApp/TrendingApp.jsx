@@ -6,7 +6,7 @@ const TrendingApp = ({ tapp }) => {
     const { title, downloads, ratingAvg, image, id } = tapp;
     return (
         <Link to={`/appDetails/${id}`}>
-            <div className="card bg-base-100  shadow-sm  flex flex-col justify-between p-5">
+            <div className="shadow-sm  flex flex-col justify-between p-5 border border-gray-300 rounded-xl">
                 <figure>
                     <img
                         src={image}
