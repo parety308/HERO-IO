@@ -1,16 +1,32 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
-import TrendingApps from '../../TrendingApps/TrendingApps';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useLocation, useNavigation, useRevalidator } from 'react-router';
 import TrendingApp from '../TrendingApp/TrendingApp';
 import AppNotFound from '../AppNotFound/AppNotFound';
+import {  BeatLoader} from 'react-spinners';
 const AllApps = () => {
     const trendindApps = useLoaderData();
     const [search, SetSearch] = useState('');
+    const { revalidate } = useRevalidator();
+    const location = useLocation();
+    const navigation = useNavigation();
+    useEffect(() => {
+        revalidate();
+    }, [location])
     const handleSearch = (e) => {
         const val = (e.target.value).toLowerCase();
         SetSearch(val);
     }
     const filterApps = trendindApps.filter(app => app.title.toLowerCase().includes(search));
+    if (navigation.state === "loading") {
+        return (
+            <div>
+                <div className="flex justify-center items-center min-h-screen">
+                    <BeatLoader color="red" size={50} />
+                </div>
+            </div>
+
+        )
+    }
     return (
         <div>
             <div className='flex justify-between items-center mt-4 mx-6'>

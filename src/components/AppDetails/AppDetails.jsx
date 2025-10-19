@@ -1,18 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import TrendingApp from '../TrendingApp/TrendingApp';
 import dwnIcon from '../../assets/icon-downloads.png'
 import ratIcon from '../../assets/icon-ratings.png'
 import revIcon from '../../assets/icon-review.png'
 import RatingsChart from '../RatingsChart/RatingsChart';
-import { addToLC } from '../AddToLC/AddToLC';
+import { addToLC, getToLC } from '../AddToLC/AddToLC';
+import { toast } from 'react-toastify';
 const AppDetails = () => {
     const { appId } = useParams();
     const allApps = useLoaderData();
     const app = allApps.find(ap => ap.id === parseInt(appId));
     const { title, downloads, ratingAvg, image, companyName, reviews, id, ratings, size, description } = app;
     const [isInstalling, setIsInstalling] = useState(false);
+    useEffect(() => {
+        const installedApps = getToLC();
+        if (installedApps.includes(id)) {
+            setIsInstalling(true);
+        }
+    }, [id]);
+
     const handleInstalation = () => {
+        toast('App Is Installing')
         addToLC(id);
         setIsInstalling(true);
     }

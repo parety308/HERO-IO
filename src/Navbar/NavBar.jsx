@@ -1,12 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router';
-import { FaGithubSquare } from "react-icons/fa";
+import { Link, NavLink } from 'react-router';
+import { FaAppStore, FaGithubSquare } from "react-icons/fa";
 import logo from '../assets/logo.png'
+import { AiFillHome } from 'react-icons/ai';
+import { MdInstallDesktop } from 'react-icons/md';
 const Navbar = () => {
-    const links = <div className='lg:flex gap-5 text-lg font-semibold'><li><Link to='/'>Home</Link></li>
-        <li><Link to='/apps'>Apps</Link></li>
-        <li><Link to='/instalation'>Installation</Link></li>
-    </div>
+    const activeClass = "underline text-[#632EE3]";
+    const links = (
+        <div className='lg:flex gap-5 text-lg font-semibold'>
+            <li>
+                <NavLink
+                    to='/'
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                >
+                    <AiFillHome /> Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to='/apps'
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                >
+                    <FaAppStore /> Apps
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to='/instalation'
+                    className={({ isActive }) => isActive ? activeClass : undefined}
+                >
+                    <MdInstallDesktop /> Installation
+                </NavLink>
+            </li>
+        </div>
+    );
+
     return (
         <div className="navbar bg-base-100 shadow-sm px-6">
             <div className="navbar-start">
@@ -22,7 +50,8 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <Link to='/'><a className="btn btn-ghost text-xl"><img className='w-9' src={logo} alt="" /> HERO.IO</a></Link>
+                <Link to='/'><a className="btn btn-ghost text-xl">
+                    <img className='w-9' src={logo} alt="" /> HERO.IO</a></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -32,7 +61,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a onClick={()=> { window.location.href = "https://github.com/parety308" }} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
+                <a onClick={() => { window.location.href = "https://github.com/parety308" }} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><FaGithubSquare /> Contribute</a>
             </div>
         </div>
     );
