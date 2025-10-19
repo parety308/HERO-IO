@@ -24,17 +24,20 @@ const Banner = ({ handleClick }) => {
                 <img className='w-1/2' src={BanImg} alt="" />
             </div>
             <div className=" text-sm  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
-                <h1 className='text-2xl font-bold text-center py-5'>Trusted by Millions, Built for You</h1>
-                <div className='px-50 flex justify-between items-center pb-5'>
-                    <div className='flex flex-col justify-center items-center'> <p>Total Downloads</p>
+                <h1 className='text-3xl font-bold text-center py-5'>Trusted by Millions, Built for You</h1>
+                <div className='lg:px-50 lg:flex justify-between items-center lg:pb-5'>
+                    <div className='mx-20 flex flex-col justify-center items-center p-5 mb-5 shadow-md rounded-xl lg:mx-0'> 
+                        <p className='text-xl'>Total Downloads</p>
                         <h1 className='text-3xl font-bold'>29.6M</h1>
                         <p>21% more than last month</p>
                     </div>
-                    <div className='flex flex-col justify-center items-center'> <p>Total Reviews</p>
+                    <div className='flex flex-col justify-center items-center mb-5 p-5 mx-20 shadow-md rounded-xl lg:mx-0'> 
+                        <p className='text-xl'>Total Reviews</p>
                         <h1 className='text-3xl font-bold'>906K</h1>
                         <p>46% more than last month</p>
                     </div>
-                    <div className='flex flex-col justify-center items-center'> <p>Active Apps</p>
+                    <div className='flex flex-col justify-center items-center  mb-5 p-5 mx-20 shadow-md rounded-xl lg:mx-0'>
+                         <p className='text-xl'>Active Apps</p>
                         <h1 className='text-3xl font-bold'>132+</h1>
                         <p>31 more will Launch</p>
                     </div>
